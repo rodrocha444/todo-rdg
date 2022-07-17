@@ -1,0 +1,44 @@
+:root {
+  --default-transition-duration: 0.2s;
+
+  --color1: #0D0CB5;
+  --color2: #5C70C1;
+  --color3: #C82121;
+  --color4: #DEE1EC;
+  --color5: #FFFFFF;
+
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Gadugi";
+  src: url("./fonts/gadugi-normal.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gadugi";
+  src: url("./fonts/gadugi-bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gadugi', 'Roboto', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  transition: filter var(--default-transition-duration);
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.7);
+}
